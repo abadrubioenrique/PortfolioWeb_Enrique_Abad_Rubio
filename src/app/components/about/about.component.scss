@@ -1,0 +1,111 @@
+h1 {
+  text-align: center;
+  padding-top:10px;
+}
+h2 {
+  font-weight: $delgada;
+  padding-bottom: 5px;
+}
+
+.titulo-about{
+    font-family: $fuenteTituloSecundario;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+.resumen {
+  padding: 0 0 10px 5px;
+  margin: 0;
+  font-size: 1.1rem;
+  /* Tabulación en la primera línea */
+  text-indent: 1.5rem;
+}
+.about {
+  padding: 0;
+  margin: 20px;
+  h2 {
+    font-weight: $delgada;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    margin: 0;
+  }
+  h3 {
+    padding: 0px 0px 0px 20px;
+    font-size: 1.4rem;
+    margin: 0 auto;
+  }
+  .nota {
+    padding: 0px 0px 5px 20px;
+    font-style: italic;
+
+  }
+  .description{
+    padding: 0px 0px 5px 20px;
+    font-size: 1rem;
+  }
+}
+@media (min-width: 768px) {
+  .about {
+    padding: 0px 100px 0 100px;
+  }
+}
+
+button {
+  border: none;
+  background-color: white;
+  &:hover {
+    color: $activo;
+  }
+  a {
+    text-decoration: none;
+    color: white;
+    &:hover {
+      color: white;
+    }
+  }
+}
+
+.about-sub {
+  display: block;
+  p {
+    margin: 0 0 5px 30px;
+  }
+}
+.btn-about {
+  display: block;
+  &:hover{
+    cursor: pointer;
+  }
+}
+
+.certificado{
+  position: relative;
+  z-index: 0;
+}
+.btn-certificado {
+  height: 22px!important;
+  font-size: 1rem !important;
+  margin:0 10px 10px 10px!important;
+
+}
+
+@media (min-width: 768px) {
+  .btn-certificado {
+    max-width: 200px;
+    position: absolute;
+    z-index: 1;
+    bottom: 30px;
+    left: 80%;
+  }
+  .certificado{
+    position: relative;
+    z-index: 0;
+  }
+}
+
+span {
+  padding: 0 0 0 10px;
+  font-weight: 300;
+  text-transform:initial;
+}
+

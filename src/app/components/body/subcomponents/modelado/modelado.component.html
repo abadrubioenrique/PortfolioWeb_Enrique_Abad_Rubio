@@ -1,0 +1,16 @@
+<div class="contenido contenedor_recursos">
+  <div class="videos" *ngFor="let modelado of modelados">
+    <h3 class="titulo titulo-seccion">{{modelado.name}}</h3>
+    <!-- Video -->
+    <video
+      src="assets/Modelados/Preview/{{modelado.name}}.mp4"
+      autoplay
+      loop
+      muted
+      width="640"
+      height="480"
+    ></video>
+  </div>
+
+
+</div>

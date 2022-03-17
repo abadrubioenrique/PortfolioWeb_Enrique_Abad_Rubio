@@ -1,0 +1,16 @@
+<div class="contenido contenedor_recursos">
+    <div class="videos" *ngFor="let rig of rigs">
+      <h3 class="titulo titulo-seccion">{{rig.name}}</h3>
+      <!-- Video -->
+      <video
+        src="assets/Rig/{{rig.name}}.mp4"
+        autoplay
+        loop
+        muted
+        width="640"
+        height="480"
+      ></video>
+    </div>
+  
+  
+  </div>

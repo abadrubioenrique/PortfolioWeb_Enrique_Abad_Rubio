@@ -1,0 +1,22 @@
+.formulario{
+    padding: 30px 20px 0 20px ;
+}
+.form-group{
+    padding-bottom: 10px;
+}
+textarea{
+    height: 150px;
+}
+.btn{
+    margin-top: 20px;
+    width: 100%;
+}
+
+@media(min-width: 768px){
+    .formulario{
+        padding: 50px 100px 0 100px ;
+    }
+    textarea{
+        height: 100px;
+    }
+}

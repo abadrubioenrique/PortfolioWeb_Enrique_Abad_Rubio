@@ -1,0 +1,29 @@
+.description {
+  background-color: rgba(36, 36, 36, 0.623);
+}
+h1{
+  font-size: 3rem;
+}
+.fotos{
+  h3{
+    font-size: 1rem;
+  }
+  p{
+    font-size: 0.7rem;
+  }
+}
+@media (min-width: 768px) {
+  .fotos {
+    width: 80%;
+    margin: 10px auto 10px auto;
+    h3{
+      font-size: 2rem;
+    }
+    p{
+      font-size: 1rem;
+    }
+  }
+  img {
+    min-height: 700px;
+  }
+}

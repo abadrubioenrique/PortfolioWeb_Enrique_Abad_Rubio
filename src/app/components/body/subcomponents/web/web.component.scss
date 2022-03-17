@@ -1,0 +1,104 @@
+img {
+  width: 100%;
+  max-height: none !important;
+}
+video {
+  width: 100%;
+  align-items: center;
+}
+
+.viewport {
+  display: none;
+}
+.descarga {
+  max-width: 300px;
+  min-height: 300px;
+  margin: 0 auto;
+  padding-top: 120px;
+}
+.titulo {
+  padding: 25px;
+}
+
+.borde-activo {
+  &:hover {
+    opacity: 80%;
+  }
+}
+iframe {
+  width: 100%;
+  height: 50vh;
+}
+.github {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  .github-link {
+    text-decoration: none;
+
+    img {
+      margin-top: 150px;
+
+    }
+    &:hover {
+      cursor: pointer;
+      opacity: 80%;
+      transition: opacity 0.25s ease-out;
+    }
+  }
+
+}
+
+@media (min-width: 768px) {
+  video {
+    width: 100%;
+    max-width: none !important;
+    margin-left: 20px;
+  }
+  .github {
+    width: 50%;
+    margin-left: 140px;
+
+  }
+  iframe {
+    width: 873px;
+    height:480px;
+    margin-left: 20px;
+  }
+  .container {
+    margin: 0 auto;
+    padding: 10px;
+  }
+  .contenedor_recursos {
+    display: grid;
+    grid-auto-flow: row dense;
+    grid-template-columns: 50% 10% 40%;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px 10px;
+    grid-template-areas:
+      ". . ."
+      ". . .";
+    justify-items: start;
+    width: 100%;
+    height: 100%;
+  }
+  .code_box {
+    padding-top: 110px;
+  }
+  .code {
+    height: 480px;
+    width: 75px;
+    overflow-y: scroll;
+  }
+  .viewport {
+    margin-top: 20px;
+    height: 700px;
+    width: 700px;
+    border: 1px solid #ddd;
+    background: #f1f1f1;
+    overflow-y: scroll;
+    display: inline;
+    margin-bottom: 10px;
+  }
+}

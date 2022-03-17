@@ -1,0 +1,56 @@
+.title {
+	text-align: center;
+	font-family: $fuenteTitulo;
+	font-size: 5rem;
+	padding: 1rem;
+	color: white;
+	margin: 0;
+}
+header{
+	background-color: rgb(31, 31, 31);
+}
+body {
+	margin: 0;
+}
+
+ul.topnav {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: $grisOscuro;
+
+	li {
+		float: left;
+		a {
+			display: block;
+			color: white;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+			&:hover {
+				&:not(.active) {
+					background-color: $activo;
+				}
+			}
+		}
+		a.active {
+			background-color: $verde;
+		}
+	}
+	li.right {
+		float: right;
+	}
+}
+@media screen and (max-width: 720px) {
+	ul.topnav {
+		li.right {
+			float: none;
+		}
+		li {
+			float: none;
+		}
+	}
+}
+
+

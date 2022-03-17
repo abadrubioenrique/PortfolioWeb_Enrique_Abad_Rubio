@@ -1,0 +1,24 @@
+/** Footer **/
+.site-footer{
+    background-color: $grisOscuro;
+    padding: 0;
+  }
+
+  .angular{
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    img{
+      width: 35px;
+      margin: 5px 0 5px 10px;
+    }
+    .copyright{
+      margin: 0 auto;
+      text-align: center;
+      color: white;
+      font-weight: bold;
+    }
+  }
+
+

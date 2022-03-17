@@ -1,0 +1,31 @@
+/* GLOBALES */
+@import 'app/scss/generales/globales';
+/* NORMALIZE */
+@import 'app/scss/generales/normalize';
+/* VARIABLES */
+@import 'app/scss/generales/variables';
+/* MIXINS */
+@import 'app/scss/generales/mixins';
+/* HEADER */
+@import 'app/shared/header/header.component.scss';
+/* BODY */
+@import 'app/components/body/body.component.scss';
+/* ABOUT */
+@import 'app/components/about/about.component.scss';
+/* CONTACT */
+@import 'app/components/contact/contact.component.scss';
+/* FOOTER */
+@import 'app/shared/footer/footer.component.scss';
+/* 404 */
+@import 'app/shared/page-not-found/page-not-found.component.scss';
+/* FUENTES */
+/* - Dancing - */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+/* - Lobster - */
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+/* Manrope */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+/* Signika */
+@import url('https://fonts.googleapis.com/css2?family=Signika:wght@300;400;500;600;700&display=swap');
+
+

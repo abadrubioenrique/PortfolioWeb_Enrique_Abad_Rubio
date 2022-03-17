@@ -1,0 +1,123 @@
+<div class="contenido contenedor_recursos">
+  <!-- SHOP -->
+  <div class="videos">
+    <h1 class="titulo titulo-seccion">Shop</h1>
+    <!-- Video -->
+    <video
+      src="assets/Recusros_portfolio/Inventario.mp4"
+      autoplay
+      loop
+      muted
+      width="640"
+      height="480"
+    ></video>
+  </div>
+  <!-- Code -->
+  <div class="code_box">
+    <div class="code">
+      <div class="borde-activo" *ngFor="let recurso of recursos">
+        <img
+          src="assets/code/{{ recurso.name }}.png"
+          alt="{{ recurso.name }}"
+          (click)="ViewportUpdate(recurso.id)"
+        />
+      </div>
+    </div>
+  </div>
+  <!-- Viewport -->
+  <div class="viewport">
+    <img id="viewport" [src]="viewport_big" class="" alt="Codigo_Item" />
+  </div>
+  <!--Fin Shop  -->
+
+  <!-- CONSOLA -->
+  <div class="videos">
+    <!-- Video -->
+    <h1 class="titulo titulo-seccion">Consola</h1>
+    <video
+      src="assets/Recusros_portfolio/Consola.mp4"
+      autoplay
+      loop
+      muted
+      width="640"
+      height="480"
+    ></video>
+  </div>
+  <!-- Code -->
+  <div class="code_box">
+    <div class="code">
+      <div class="borde-activo" *ngFor="let consola of consolas">
+        <img
+          src="assets/code/{{ consola.name }}.png"
+          alt="{{ consola.name }}"
+          (click)="ViewportUpdate_console(consola.id)"
+        />
+      </div>
+    </div>
+  </div>
+  <!-- Viewport -->
+  <div class="viewport">
+    <img
+      id="viewport"
+      [src]="viewport_big_console"
+      class=""
+      alt="Codigo_Item"
+    />
+  </div>
+  <!-- Fin Consola -->
+  <!-- LOGIN -->
+  <div class="videos">
+    <!-- Video -->
+    <h1 class="titulo titulo-seccion">Login</h1>
+    <video
+      src="assets/Recusros_portfolio/Login.mp4"
+      muted
+      autoplay
+      loop
+      width="640"
+      height="480"
+      type="video/mp4"
+    ></video>
+  </div>
+  <!-- Code -->
+  <div class="code_box">
+    <div class="code">
+      <div class="borde-activo" *ngFor="let login of logins">
+        <img
+          src="assets/code/{{ login.name }}.png"
+          alt="{{ login.name }}"
+          (click)="ViewportUpdate_login(login.id)"
+        />
+      </div>
+    </div>
+  </div>
+  <!-- Viewport -->
+  <div class="viewport">
+    <img id="viewport" [src]="viewport_big_login" />
+  </div>
+  <!-- Fin Login -->
+  <!-- JUEGO -->
+  <div class="videos">
+    <!-- Video -->
+    <h1 class="titulo titulo-seccion">Juego Unity</h1>
+    <video
+      src="assets/Recusros_portfolio/JuegoUnity.mp4"
+      autoplay
+      loop
+      muted
+      width="640"
+      height="480"
+    ></video>
+  </div>
+  <div></div>
+  <div class="descarga">
+    <h3 class="titulo-seccion text-center">Descargar</h3>
+    <a
+      target="_blank"
+      href="https://drive.google.com/file/d/1Ow3A7Iof802QUQpBUg7QEIC8hLifaPmj/view?usp=sharing"
+      ><img src="assets/img/CaratulaJuego.png" alt="CaratulaJuego"
+    /></a>
+  </div>
+  <!-- Fin Juego -->
+</div>
+<!-- Fin -->

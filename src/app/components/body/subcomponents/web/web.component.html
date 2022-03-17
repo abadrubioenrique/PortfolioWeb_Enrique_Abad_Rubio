@@ -1,0 +1,87 @@
+<div class="contenido contenedor_recursos">
+  <!-- React -->
+  <div class="videos">
+    <h1 class="titulo titulo-seccion">React</h1>
+    <!-- Video -->
+    <iframe
+      src="https://www.youtube.com/embed/OvPlTnlEkuU"
+      title="Presentación proyecto First Commit"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+    ></iframe>
+  </div>
+  <!-- Code -->
+  <div class="code_box"></div>
+  <!-- Viewport -->
+  <div class="github">
+    <a class="github-link" href="https://github.com/abadrubioenrique/ob-first-commit" target="_blank" >
+    <img src="assets/img/Github.png" alt="github"/>
+    <h3>Enlace al repositorio</h3>
+    </a>
+  </div>
+  <!--Fin React  -->
+  <!-- Angular -->
+  <div class="videos">
+    <h1 class="titulo titulo-seccion">Angular</h1>
+    <!-- Video -->
+    <video
+      src="assets/Recursos_web/Angular-Mysql_CRUD.mp4"
+      autoplay
+      loop
+      muted
+      width="640"
+      height="480"
+    ></video>
+  </div>
+  <!-- Code -->
+  <div class="code_box">
+    <div class="code">
+      <div class="borde-activo" *ngFor="let web of webs">
+        <img
+          src="assets/code/web/{{ web.name }}.png"
+          alt="{{ web.name }}"
+          (click)="ViewportUpdate(web.id)"
+        />
+      </div>
+    </div>
+  </div>
+  <!-- Viewport -->
+  <div class="viewport">
+    <img id="viewport" [src]="viewport_big" class="" alt="Codigo_Item" />
+  </div>
+  <!--Fin Angular  -->
+
+  <!-- PHP -->
+  <div class="videos">
+    <h1 class="titulo titulo-seccion">PHP</h1>
+    <!-- Video -->
+    <video
+      src="assets/Recursos_web/GDLWEBCAMP.mp4"
+      autoplay
+      loop
+      muted
+      width="640"
+      height="480"
+    ></video>
+  </div>
+  <!-- Code -->
+  <div class="code_box">
+    <div class="code">
+      <div class="borde-activo" *ngFor="let pagina of paginas">
+        <img
+          src="assets/code/GDLWEBCAMP/{{ pagina.name }}.png"
+          alt="{{ pagina.name }}"
+          (click)="ViewportUpdatePagina(pagina.id)"
+        />
+      </div>
+    </div>
+  </div>
+  <!-- Viewport -->
+  <div class="viewport">
+    <img id="viewport" [src]="viewport_big_php" class="" alt="Codigo_Item" />
+  </div>
+  <!--Fin PHP  -->
+</div>
+
+<!-- Fin -->

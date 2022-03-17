@@ -1,0 +1,88 @@
+.container {
+  display: block;
+}
+.titulo-seccion{
+  font-family: $fuenteTituloSecundario;
+  font-weight: Medium;
+  text-transform: uppercase;
+}
+
+/**Botones**/
+.btn {
+  background-color: $grisOscuro !important;
+  font-weight: $black !important;
+
+  &:hover {
+    background-color: $activo !important;
+  }
+}
+img {
+  max-height: 300px !important;
+  width: 100%;
+  margin: 0.5rem 0 0.5rem 0;
+}
+.btn-absoulute{
+  margin-bottom: 10px!important;
+}
+
+@media (min-width: 720px) {
+  .box {
+    height: 500px;
+    width: 500px;
+    position: relative;
+  h2{
+    margin-top: 10px;
+  }
+    .btn-absoulute{
+      top: 85%;
+      position: absolute;
+    }
+    img {
+      max-height: 300px !important;
+      margin: 0.5rem 0 0.5rem 0;
+      &:hover {
+        cursor: pointer;
+        opacity: 0.8;
+        -webkit-transform: scale(1.01);
+        transform: scale(1.01)
+      }
+    } 
+  }
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    column-gap: 50px;
+    grid-auto-flow: row;
+    justify-items:center;
+    grid-template-areas:
+      "Primero Segundo"
+      "Tercero Cuarto"
+      "Quinto Sexto";
+  }
+
+  .Primero {
+    grid-area: Primero;
+  }
+
+  .Segundo {
+    grid-area: Segundo;
+  }
+
+  .Tercero {
+    grid-area: Tercero;
+  }
+
+  .Cuarto {
+    grid-area: Cuarto;
+  }
+
+  .Quinto {
+    grid-area: Quinto;
+  }
+
+  .Sexto {
+    grid-area: Sexto;
+  }
+
+}
