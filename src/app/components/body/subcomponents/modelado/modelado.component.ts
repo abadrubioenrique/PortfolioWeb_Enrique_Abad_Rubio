@@ -1,8 +1,5 @@
-import { ChangeDetectorRef, Component, OnInit } from '@angular/core';
-import {Recurso} from '../../../../utiles/recursos_model';
+import { Component, OnInit } from '@angular/core';
 import {MODELADOS} from '../../../../utiles/modelados_db';
-import * as THREE from 'three';
-import { MeshOptions } from 'angular-stl-model-viewer';
 
 @Component({
   selector: 'app-modelado',
